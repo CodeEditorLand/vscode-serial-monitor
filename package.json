@@ -1,32 +1,32 @@
 {
-  "author": {
-    "name": "Microsoft Corporation"
-  },
+  "name": "@microsoft/vscode-serial-monitor-api",
+  "version": "0.1.7",
+  "description": "Public API for vscode-serial-monitor",
   "bugs": {
     "url": "https://github.com/microsoft/vscode-serial-monitor/issues"
   },
-  "description": "Public API for vscode-serial-monitor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/vscode-serial-monitor"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "publisher": "ms-vscode",
+  "main": "dist/api.js",
+  "typings": "dist/api.d.ts",
+  "scripts": {
+    "build": "npm run lint && tsc -p ./",
+    "clean": "rimraf ./dist"
+  },
   "devDependencies": {
     "@types/node": "16.11.7",
     "@types/vscode": "1.55.0",
     "rimraf": "3.0.2",
     "typescript": "4.8.4"
   },
-  "license": "MIT",
-  "main": "dist/api.js",
-  "name": "@microsoft/vscode-serial-monitor-api",
   "publishConfig": {
     "access": "public"
-  },
-  "publisher": "ms-vscode",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/microsoft/vscode-serial-monitor"
-  },
-  "scripts": {
-    "build": "npm run lint && tsc -p ./",
-    "clean": "rimraf ./dist"
-  },
-  "typings": "dist/api.d.ts",
-  "version": "0.1.7"
+  }
 }
