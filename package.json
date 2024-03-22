@@ -1,5 +1,30 @@
 {
+	"name": "@microsoft/vscode-serial-monitor-api",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Public API for vscode-serial-monitor",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"main": "dist/api.js",
+	"typings": "dist/api.d.ts",
+	"scripts": {
+		"build": "npm run lint && tsc -p ./",
+		"clean": "rimraf ./dist",
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
 	"devDependencies": {
 		"@types/node": "20.11.30",
 		"@types/vscode": "1.87.0",
@@ -7,13 +32,7 @@
 		"typescript": "5.4.2",
 		"typescript-esbuild": "0.4.5"
 	},
-	"main": "dist/api.js",
-	"name": "@microsoft/vscode-serial-monitor-api",
-	"scripts": {
-		"build": "npm run lint && tsc -p ./",
-		"clean": "rimraf ./dist",
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
-	},
-	"type": "module",
-	"typings": "dist/api.d.ts"
+	"publishConfig": {
+		"access": "public"
+	}
 }
