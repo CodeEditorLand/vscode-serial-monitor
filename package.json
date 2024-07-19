@@ -8,7 +8,7 @@
 		"clean": "rimraf ./dist"
 	},
 	"devDependencies": {
-		"@types/node": "20.14.11",
-		"rimraf": "6.0.1"
+		"@types/node": "16.11.7",
+		"rimraf": "3.0.2"
 	}
 }
