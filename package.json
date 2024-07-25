@@ -1,14 +1,14 @@
 {
-	"description": "Public API for vscode-serial-monitor",
-	"devDependencies": {
-		"@types/node": "^16.11.7",
-		"rimraf": "^3.0.2"
-	},
-	"main": "dist/api.js",
 	"name": "@microsoft/vscode-serial-monitor-api",
+	"description": "Public API for vscode-serial-monitor",
+	"main": "dist/api.js",
+	"typings": "dist/api.d.ts",
 	"scripts": {
 		"build": "npm run lint && tsc -p ./",
 		"clean": "rimraf ./dist"
 	},
-	"typings": "dist/api.d.ts"
+	"devDependencies": {
+		"@types/node": "20.14.12",
+		"rimraf": "6.0.1"
+	}
 }
