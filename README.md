@@ -1,18 +1,22 @@
 # Serial Monitor
 
-The Serial Monitor extension for Visual Studio Code provides a way to read from and write to serial ports.
+The Serial Monitor extension for Visual Studio Code provides a way to read from
+and write to serial ports.
 
-**This repository is used for tracking feedback and for exposing the public API. It contains no source code for the extension itself.**
+**This repository is used for tracking feedback and for exposing the public API.
+It contains no source code for the extension itself.**
 
 ## Public API for the ms-vscode.vscode-serial-monitor VS Code extension
 
-The purpose of this API is to allow for any extension to interact with Microsoft's Serial Monitor extension for VSCode.
+The purpose of this API is to allow for any extension to interact with
+Microsoft's Serial Monitor extension for VSCode.
 
-When your extension activates, you can use the following code to get access to the API:
+When your extension activates, you can use the following code to get access to
+the API:
 
 ```Typescript
     import {SerialMonitorApi, Version, getSerialMonitorApi, LineEnding, Parity, StopBits, Port} from '@microsoft/vscode-serial-monitor-api';
- 
+
     let api: SerialMonitorApi|undefined = await getSerialMonitorApi(Version.latest, extensionContext);
     if (api) {
         // open a serial port
@@ -27,14 +31,20 @@ When your extension activates, you can use the following code to get access to t
 
 ## Feedback
 
-We appreciate any feedback you have to help improve this extension. To submit feedback, please [create an issue](https://github.com/microsoft/vscode-serial-monitor/issues/new/choose).
+We appreciate any feedback you have to help improve this extension. To submit
+feedback, please
+[create an issue](https://github.com/microsoft/vscode-serial-monitor/issues/new/choose).
 
-*Note: this repository is for feedback on the VS Code extension. To provide feedback on Serial Monitor in Visual Studio 2022, please go to [Visual Studio Developer Community](https://developercommunity.visualstudio.com/home).*
+_Note: this repository is for feedback on the VS Code extension. To provide
+feedback on Serial Monitor in Visual Studio 2022, please go to
+[Visual Studio Developer Community](https://developercommunity.visualstudio.com/home)._
 
 ## Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
+This project may contain trademarks or logos for projects, products, or
+services. Authorized use of Microsoft trademarks or logos is subject to and must
+follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+Use of Microsoft trademarks or logos in modified versions of this project must
+not cause confusion or imply Microsoft sponsorship. Any use of third-party
+trademarks or logos are subject to those third-party's policies.
