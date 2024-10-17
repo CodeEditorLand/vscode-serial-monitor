@@ -1,7 +1,7 @@
 {
 	"description": "Public API for vscode-serial-monitor",
 	"devDependencies": {
-		"@types/node": "22.7.5",
+		"@types/node": "22.7.6",
 		"rimraf": "6.0.1"
 	},
 	"main": "dist/api.js",
