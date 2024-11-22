@@ -136,6 +136,7 @@ export async function getSerialMonitorApi(
 ): Promise<SerialMonitorApi | undefined> {
 	const serialMonitorExtension: vscode.Extension<any> | undefined =
 		vscode.extensions.getExtension("ms-vscode.vscode-serial-monitor");
+
 	let extensionApi: any | undefined;
 
 	if (serialMonitorExtension) {
