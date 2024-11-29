@@ -28,16 +28,23 @@ export type DataBit = 5 | 6 | 7 | 8;
 
 export interface MonitorPortSettings {
 	port: string;
+
 	baudRate: number;
+
 	lineEnding: LineEnding;
+
 	dataBits: DataBit;
+
 	stopBits: StopBits;
+
 	parity: Parity;
 }
 
 export interface MonitorTCPConnectionSettings {
 	host: string;
+
 	port: number;
+
 	swoEnabled: boolean;
 }
 
@@ -57,6 +64,7 @@ export interface PortInformation {
 	 * Name of the port. i.e. `COM3`
 	 */
 	portName: string;
+
 	friendlyName?: string;
 	/**
 	 * Vendor identifier made of 4 hex characters.
