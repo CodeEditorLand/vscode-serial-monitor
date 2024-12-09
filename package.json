@@ -1,5 +1,5 @@
 {
-	"name": "@codeeditorland/@codeeditorland/serial-monitor-api",
+	"name": "@codeeditorland/serial-monitor-api",
 	"description": "Public API for vscode-serial-monitor",
 	"main": "dist/api.js",
 	"typings": "dist/api.d.ts",
