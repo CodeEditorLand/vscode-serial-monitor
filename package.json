@@ -1,15 +1,15 @@
 {
-	"dependencies": {},
+	"name": "@codeeditorland/@codeeditorland/serial-monitor-api",
 	"description": "Public API for vscode-serial-monitor",
-	"devDependencies": {
-		"@types/node": "22.10.1",
-		"rimraf": "6.0.1"
-	},
 	"main": "dist/api.js",
-	"name": "@codeeditorland/vscode-serial-monitor-api",
+	"typings": "dist/api.d.ts",
 	"scripts": {
 		"build": "npm run lint && tsc -p ./",
 		"clean": "rimraf ./dist"
 	},
-	"typings": "dist/api.d.ts"
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "22.10.1",
+		"rimraf": "6.0.1"
+	}
 }
